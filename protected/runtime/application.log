@@ -1,0 +1,636 @@
+2016/05/02 10:55:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nearby.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/05/02 10:58:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'locations' already exists. The SQL statement executed was: CREATE TABLE `locations` (
+	`id` INTEGER PRIMARY KEY,
+	`name` TEXT,
+	`lat` TEXT,
+	`long` TEXT,
+	`city` TEXT,
+	`state` TEXT,
+	`created` INTEGER,
+	`updated` INTEGER
+).
+2016/05/02 10:58:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'locations' already exists. The SQL statement executed was: CREATE TABLE `locations` (
+	`id` INTEGER PRIMARY KEY,
+	`name` TEXT,
+	`lat` TEXT,
+	`long` TEXT,
+	`city` TEXT,
+	`state` TEXT,
+	`created` INTEGER,
+	`updated` INTEGER
+)' in /var/www/public/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/public/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /var/www/public/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable('locations', Array, NULL)
+#2 /var/www/public/nearbys/protected/migrations/m160502_104227_locations.php(25): CDbMigration->createTable('locations', Array)
+#3 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(415): m160502_104227_locations->up()
+#4 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m160502_104227_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#10 /var/www/public/yii/framework/yiic.php(33): CApplication->run()
+#11 /var/www/public/nearbys/protected/yiic.php(7): require_once('/var/www/public...')
+#12 {main}
+---
+2016/05/02 10:58:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'locations' already exists. The SQL statement executed was: CREATE TABLE `locations` (
+	`id` INTEGER PRIMARY KEY,
+	`name` TEXT,
+	`lat` TEXT,
+	`long` TEXT,
+	`city` TEXT,
+	`state` TEXT,
+	`created` INTEGER,
+	`updated` INTEGER
+).
+2016/05/02 10:58:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'locations' already exists. The SQL statement executed was: CREATE TABLE `locations` (
+	`id` INTEGER PRIMARY KEY,
+	`name` TEXT,
+	`lat` TEXT,
+	`long` TEXT,
+	`city` TEXT,
+	`state` TEXT,
+	`created` INTEGER,
+	`updated` INTEGER
+)' in /var/www/public/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/public/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /var/www/public/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable('locations', Array, NULL)
+#2 /var/www/public/nearbys/protected/migrations/m160502_104227_locations.php(25): CDbMigration->createTable('locations', Array)
+#3 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(415): m160502_104227_locations->up()
+#4 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m160502_104227_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#10 /var/www/public/yii/framework/yiic.php(33): CApplication->run()
+#11 /var/www/public/nearbys/protected/yiic.php(7): require_once('/var/www/public...')
+#12 {main}
+---
+2016/05/02 10:59:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'locations' already exists. The SQL statement executed was: CREATE TABLE `locations` (
+	`id` INTEGER PRIMARY KEY,
+	`name` TEXT,
+	`lat` TEXT,
+	`long` TEXT,
+	`city` TEXT,
+	`state` TEXT,
+	`created` INTEGER,
+	`updated` INTEGER
+).
+2016/05/02 10:59:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'locations' already exists. The SQL statement executed was: CREATE TABLE `locations` (
+	`id` INTEGER PRIMARY KEY,
+	`name` TEXT,
+	`lat` TEXT,
+	`long` TEXT,
+	`city` TEXT,
+	`state` TEXT,
+	`created` INTEGER,
+	`updated` INTEGER
+)' in /var/www/public/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/public/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /var/www/public/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable('locations', Array, NULL)
+#2 /var/www/public/nearbys/protected/migrations/m160502_104227_locations.php(25): CDbMigration->createTable('locations', Array)
+#3 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(415): m160502_104227_locations->up()
+#4 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp('m160502_104227_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#8 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#10 /var/www/public/yii/framework/yiic.php(33): CApplication->run()
+#11 /var/www/public/nearbys/protected/yiic.php(7): require_once('/var/www/public...')
+#12 {main}
+---
+2016/05/02 10:59:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'nearby'' in /var/www/public/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /var/www/public/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /var/www/public/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /var/www/public/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent('db')
+#4 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory(-1)
+#6 /var/www/public/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run(Array)
+#10 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#12 /var/www/public/yii/framework/yiic.php(33): CApplication->run()
+#13 /var/www/public/nearbys/protected/yiic.php(7): require_once('/var/www/public...')
+#14 {main}
+---
+2016/05/02 11:00:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nearby.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2016/05/02 13:06:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/public/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/public/nearbys/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/nearbys/index.php?r=gii
+---
+2016/05/02 13:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/public/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/public/nearbys/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/nearbys/index.php?r=gii
+---
+2016/05/02 13:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /var/www/public/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/public/nearbys/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/nearbys/index.php?r=gii
+---
+2016/05/02 13:45:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/public/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/public/nearbys/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/nearbys/index.php?r=gii
+---
+2016/05/02 14:26:46 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearbys/protected/commands/ImportLocationsCommand.php(50): spl_autoload_call()
+#1 unknown(0): ImportLocationsCommand->actionImportLocations()
+#2 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): ImportLocationsCommand->run()
+#4 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /var/www/public/nearbys/protected/yiic.php(7): require_once()
+
+2016/05/02 14:28:12 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearbys/protected/commands/ImportLocationsCommand.php(50): spl_autoload_call()
+#1 unknown(0): ImportLocationsCommand->actionImportLocations()
+#2 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): ImportLocationsCommand->run()
+#4 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /var/www/public/nearbys/protected/yiic.php(7): require_once()
+
+2016/05/02 14:30:04 [error] [php] include(Locations.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearbys/protected/commands/ImportLocationsCommand.php(50): spl_autoload_call()
+#1 unknown(0): ImportLocationsCommand->actionImportLocations()
+#2 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): ImportLocationsCommand->run()
+#4 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /var/www/public/nearbys/protected/yiic.php(7): require_once()
+
+2016/05/02 14:34:05 [error] [php] include(Locations.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearbys/protected/commands/ImportLocationsCommand.php(50): spl_autoload_call()
+#1 unknown(0): ImportLocationsCommand->actionImportLocations()
+#2 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): ImportLocationsCommand->run()
+#4 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /var/www/public/nearbys/protected/yiic.php(7): require_once()
+
+2016/05/02 14:34:21 [error] [php] include(Locations.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearbys/protected/commands/ImportLocationsCommand.php(50): spl_autoload_call()
+#1 unknown(0): ImportLocationsCommand->actionImportLocations()
+#2 /var/www/public/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): ImportLocationsCommand->run()
+#4 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#6 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /var/www/public/nearbys/protected/yiic.php(7): require_once()
+
+2016/05/02 15:01:49 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:21)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (21)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:03:29 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:03:47 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:05:30 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:05:31 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:10:04 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:16:30 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:17:53 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:19:04 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:22:32 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:24:13 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:24:15 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:29:27 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:3)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/
+in /var/www/public/nearbys/protected/views/site/index.php (3)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:37:18 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/layouts/main.php:19)
+Stack trace:
+#0 /var/www/public/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/public/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/public/yii/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /var/www/public/yii/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /var/www/public/nearbys/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/public/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/public/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/public/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/layouts/main.php (19)
+in /var/www/public/nearbys/protected/views/layouts/column1.php (6)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+2016/05/02 15:39:18 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:45:58 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:46:30 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:46:36 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:47:00 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:48:02 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (32)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:49:10 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/controllers/SiteController.php:30)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/controllers/SiteController.php (30)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:49:27 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/controllers/SiteController.php:30)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/controllers/SiteController.php (30)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:49:48 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/controllers/SiteController.php:30)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/
+in /var/www/public/nearbys/protected/controllers/SiteController.php (30)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:50:56 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (33)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:50:59 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/views/site/index.php:1)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearbys/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearbys/index.php(15): CWebApplication->run()
+REQUEST_URI=/nearbys/index.php
+in /var/www/public/nearbys/protected/views/site/index.php (1)
+in /var/www/public/nearbys/protected/controllers/SiteController.php (33)
+in /var/www/public/nearbys/index.php (15)
+2016/05/02 15:58:02 [error] [php] Undefined variable: cs (/var/www/public/nearbys/protected/commands/ImportLocationsCommand.php:46)
+Stack trace:
+#0 /var/www/public/yii/framework/console/CConsoleCommandRunner.php(71): ImportLocationsCommand->run()
+#1 /var/www/public/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /var/www/public/yii/framework/base/CApplication.php(184): CConsoleApplication->processRequest()
+#3 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
+#4 /var/www/public/nearbys/protected/yiic.php(7): require_once()
+
