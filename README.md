@@ -1,4 +1,4 @@
-# nearby
+# Esplora i dintorni
 The core component of this application is its ability to find other locations near an
 existing location. The easiest way to find this information is to take advantage of a
 third-party API. For this application, we'll be using the Google Places API, a web
