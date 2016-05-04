@@ -634,3 +634,422 @@ Stack trace:
 #3 /var/www/public/yii/framework/yiic.php(33): CConsoleApplication->run()
 #4 /var/www/public/nearbys/protected/yiic.php(7): require_once()
 
+2016/05/03 10:18:11 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/views/site/index.php(26): spl_autoload_call()
+#1 /var/www/public/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/public/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#4 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#5 /var/www/public/nearby/protected/controllers/SiteController.php(41): SiteController->render()
+#6 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#7 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#9 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#10 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#11 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/
+in /var/www/public/nearby/protected/views/site/index.php (26)
+in /var/www/public/nearby/protected/controllers/SiteController.php (41)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:18:40 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(37): spl_autoload_call()
+#1 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#2 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (37)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:19:30 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(37): spl_autoload_call()
+#1 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#2 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (37)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:19:36 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(37): spl_autoload_call()
+#1 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#2 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (37)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:20:15 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(37): spl_autoload_call()
+#1 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#2 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (37)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:20:31 [error] [php] include(Location.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(37): spl_autoload_call()
+#1 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#2 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (37)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:26:04 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:26:21 [error] [exception.CException] exception 'CException' with message 'Alias "app.extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('app.extensions....')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:28:04 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...', true)
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:28:11 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...', true)
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:28:23 [error] [exception.CException] exception 'CException' with message 'Alias "app.extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('app.extensions....', true)
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:28:48 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...', true)
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:29:57 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces.php" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:30:05 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces.php" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:30:35 [error] [exception.CException] exception 'CException' with message 'Alias "/var/www/public/nearby/protectedextensions.GooglePlaces.php" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('/var/www/public...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:31:20 [error] [php] Object of class CWebApplication could not be converted to string (/var/www/public/nearby/protected/controllers/SiteController.php:124)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (124)
+in /var/www/public/nearby/protected/controllers/SiteController.php (38)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:31:29 [error] [php] Object of class CWebApplication could not be converted to string (/var/www/public/nearby/protected/controllers/SiteController.php:124)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#6 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (124)
+in /var/www/public/nearby/protected/controllers/SiteController.php (38)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:31:37 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces.php" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:31:51 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:34:05 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.GooglePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.Goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:38:48 [error] [php] include(GooglePlaces.php): failed to open stream: No such file or directory (/var/www/public/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(125): spl_autoload_call()
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces()
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#5 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/?id=
+in /var/www/public/nearby/protected/controllers/SiteController.php (125)
+in /var/www/public/nearby/protected/controllers/SiteController.php (38)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:42:00 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.googlePlaces" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('extensions.goog...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:42:53 [error] [exception.CException] exception 'CException' with message 'Alias "googlePlaces/GooglePlaces.php" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(124): YiiBase::import('googlePlaces/Go...')
+#1 /var/www/public/nearby/protected/controllers/SiteController.php(38): SiteController->getPlaces(NULL)
+#2 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#3 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/public/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/public/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/public/yii/framework/web/CWebApplication.php(282): CController->run('')
+#7 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#8 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/public/nearby/index.php(16): CApplication->run()
+#10 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---
+2016/05/03 10:50:37 [error] [php] Undefined index: results (/var/www/public/nearby/protected/views/site/index.php:40)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearby/protected/controllers/SiteController.php(41): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/
+in /var/www/public/nearby/protected/views/site/index.php (40)
+in /var/www/public/nearby/protected/controllers/SiteController.php (41)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:52:38 [error] [php] Undefined index: results (/var/www/public/nearby/protected/views/site/index.php:40)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearby/protected/controllers/SiteController.php(41): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/
+in /var/www/public/nearby/protected/views/site/index.php (40)
+in /var/www/public/nearby/protected/controllers/SiteController.php (41)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 10:52:53 [error] [php] Undefined index: results (/var/www/public/nearby/protected/views/site/index.php:40)
+Stack trace:
+#0 /var/www/public/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/public/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/public/nearby/protected/controllers/SiteController.php(41): SiteController->render()
+#3 /var/www/public/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/public/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/public/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/public/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/public/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/public/nearby/index.php(16): CWebApplication->run()
+REQUEST_URI=/nearby/
+in /var/www/public/nearby/protected/views/site/index.php (40)
+in /var/www/public/nearby/protected/controllers/SiteController.php (41)
+in /var/www/public/nearby/index.php (16)
+2016/05/03 12:13:35 [error] [exception.CException] exception 'CException' with message 'Alias "app.ext.GooglePlaces.php" is invalid. Make sure it points to an existing directory or file.' in /var/www/public/yii/framework/YiiBase.php:348
+Stack trace:
+#0 /var/www/public/nearby/protected/controllers/SiteController.php(2): YiiBase::import('app.ext.GoogleP...')
+#1 /var/www/public/yii/framework/web/CWebApplication.php(354): require('/var/www/public...')
+#2 /var/www/public/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('')
+#3 /var/www/public/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#4 /var/www/public/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/public/nearby/index.php(16): CApplication->run()
+#6 {main}
+REQUEST_URI=/nearby/?id=
+HTTP_REFERER=http://192.168.33.10/nearby/
+---

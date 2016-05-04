@@ -30,7 +30,15 @@ class SiteController extends Controller
 		
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		//$this->render('index');
+		$location = $places = array();
+		if (isset($_GET['id']))
+		{
+			$location = Locations::model()->findByPk($_GET['id']);
+			$places = $this->getPlaces($location);
+		}
+
+		$this->render('index', array('location' => $location, 'places' => $places));
 	}
 
 	/**
@@ -106,5 +114,33 @@ class SiteController extends Controller
 	{
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	/**
+	 *
+	 */
+	private function getPlaces(&$location)
+	{
+
+		// Generate a hash
+		$hash = md5($location->lat . '-' . $location->long);
+
+		// Retrieve data from the cache
+		$cache = Yii::app()->cache->get($hash);
+
+		// If we don't have any cached data, perform a search
+		// against the API
+		if ($cache === false)
+		{
+			Yii::import('ext.GooglePlaces',true);
+			$places = new GooglePlaces(Yii::app()->params['PlacesApi']['apiKey']);
+			$places->radius = 200;
+			$places->location = array($location->lat, $location->long);
+			$cache = $places->search();
+
+			// And store the result in the cache
+			Yii::app()->cache->set($hash, $cache);
+		}
+		return $cache;
 	}
 }

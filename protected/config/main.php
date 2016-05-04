@@ -2,6 +2,7 @@
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
+//Yii::setPathOfAlias('GooglePlaces','extensions/');
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
@@ -16,6 +17,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.*'
 	),
 
 	'modules'=>array(
@@ -32,6 +34,10 @@ return array(
 
 	// application components
 	'components'=>array(
+
+		'cache' => array(
+			'class' => 'CFileCache'
+		),
 
 		'user'=>array(
 			// enable cookie-based authentication
